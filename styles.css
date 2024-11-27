@@ -8,9 +8,25 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.avatar {
+.img-avatar {
     width: 150px;
     height: 150px;
+}
+
+#avatar img:first-child {
+    display: block;
+}
+
+#avatar img:last-child {
+    display: none;
+}
+
+#avatar:hover img:first-child {
+    display: none;
+}
+
+#avatar:hover img:last-child {
+    display: block;
 }
 
 .card {
@@ -56,6 +72,7 @@ body {
     75% {margin-left: 20px; margin-top: 100px;}
     100% {margin-left: 20px; margin-top: 20px;}
 }
+
 /*
 Stretch goals:
 Find other ways you can personalize 
